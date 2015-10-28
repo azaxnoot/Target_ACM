@@ -11,3 +11,5 @@ Advantages of 2's Complement & DisAdvanatages of 1's Complement:
 
 i) 2's complement only has one value for zero. 1's complement has a "positive" zero and a "negative" zero.
 ii) Adding numbers using 1's Complement we have to Add an end-around-carry whereas for 2's Complement we don't need to do it.
+iii) Due to the number of 0's in 2's Complement Compared to 1's Complement is less than by 2's complement get an Extra space to 
+or an extra Memory Slot to store another number .
