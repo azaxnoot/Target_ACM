@@ -1,0 +1,13 @@
+Advanatages & DisAdvanatages of 1's & 2's Complement are as Follows:
+
+Advantages of 1's Complement & DisAdvanatages of 2's Complement:
+================================================================
+
+i) 1's complement takes slightly quicker to form the negative of a number, whereas 2's complement is longer. 
+ii) If we try to make the Largest negative number Positive then it will not be a Overflow whereas 2's Complement will get a Overflow Signal.
+
+Advantages of 2's Complement & DisAdvanatages of 1's Complement:
+================================================================
+
+i) 2's complement only has one value for zero. 1's complement has a "positive" zero and a "negative" zero.
+ii) Adding numbers using 1's Complement we have to Add an end-around-carry whereas for 2's Complement we don't need to do it.
