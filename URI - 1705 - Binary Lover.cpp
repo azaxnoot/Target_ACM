@@ -154,7 +154,7 @@ LL fun(LL val)
     return ret;
 }
 
-const int MAXN = 10000005;
+const int MAXN = 1000005;
 int status[(MAXN/32)+10];
 int primelist[MAXN], primesz;
 
@@ -180,15 +180,15 @@ void sieve()
 }
 
 map<LL, LL>mymap;
-int freq[10000005];
-LL facval[10000005];
-int idx;
+int freq[1000005];
+LL facval[1000005];
+int idx; int total = 0;
 
 void facto(LL n)
 {
     LL temp = n;
     LL sqT = sqrt(temp);
-    idx = 0;
+    idx = 0; int tt = total;
     for(int i=0; i<primesz; i++){
         LL val = (LL)primelist[i];
         if(val>sqT){
@@ -201,6 +201,7 @@ void facto(LL n)
         }
 
         if(cnt>0){
+            if(total==tt)total++;
             freq[idx] = cnt;
             facval[idx] = (LL)val;
             idx++;
@@ -243,13 +244,12 @@ int main()
         vec[i] = fun(i);
     }
     sieve();
-
-    //mymap[1]
     for(int i=0; i<4096; i++){
         if(vec[i]==0) continue;
         facto(vec[i]);
         rec(0, 1, vec[i]);
     }
+    
     LL n;
     while(scanf("%lld", &n)==1){
         LL val = mymap[n];
