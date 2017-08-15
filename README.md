@@ -1,4 +1,4 @@
-**Other Solved Problems
+***Other Solved Problems
 
 Created to save Codes of Practice from several OJ's .
 
